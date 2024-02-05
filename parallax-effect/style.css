@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&family=Protest+Strike&display=swap');
+
+*{
+    font-family: 'Protest Strike', sans-serif;
+}
+body{
+    background:#0a2a43;
+    min-height: 1500px;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#0a2a43,transparent);
+    z-index: 1000;
+}
+section:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0a2a43;
+    z-index: 1000;
+    mix-blend-mode: color;
+}
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    object-fit: cover;
+}
+#text{
+    position: relative;
+    color: #ffffffd9;
+    font-size: 10em;
+    z-index: 1;
+    letter-spacing: .1em;
+    transition: text-shadow 300ms ease-in;
+}
+#text::selection{
+    text-shadow: -6px 20px 20px #1a3a53;;
+
+}
+#road{
+    z-index: 2;
+}
+
